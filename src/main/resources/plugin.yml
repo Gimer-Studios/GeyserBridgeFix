@@ -1,0 +1,4 @@
+name: GeyserBridgeFix
+version: '${project.version}'
+main: com.gimerstudios.GeyserBridgeFix
+api-version: '1.20'
