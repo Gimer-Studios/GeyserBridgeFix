@@ -6,15 +6,16 @@ public final class GeyserBridgeFix extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        saveDefaultConfig(); // Saves a config.yml file in the plugin's data folder if it doesn't exist
         getLogger().info("GeyserBridgeFix has been enabled.");
-        getLogger().info("DEV BUILD 0.1");
-        getServer().getPluginManager().registerEvents(new BlockPlacementListener(), this);
-
+        getLogger().info("Beta Build 1.0");
+        getServer().getPluginManager().registerEvents(new BlockPlacementListener(this), this);
     }
 
     @Override
     public void onDisable() {
         getLogger().info("GeyserBridgeFix has been disabled.");
-        getLogger().info("DEV BUILD 0.1");
+        getLogger().info("Beta Build 1.0");
     }
 }
+
